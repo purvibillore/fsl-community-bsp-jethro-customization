@@ -57,3 +57,10 @@ The following layers are included on this release:
    GIT: git://github.com/Freescale/meta-fsl-demos.git
    Mailing list: https://lists.yoctoproject.org/listinfo/meta-freescale
    Note: Use [meta-fsl-demos] in subject to easy the processing
+   
+   * meta-qt5: layer depends on open-embedded core
+   Path: sources/meta-qt5
+   Project: https://github.com/Freescale/meta-qt5
+   GIT: git://github.com/Freescale/meta-qt5.git
+   Mailing list: https://lists.yoctoproject.org/listinfo/meta-qt5
+   Note: Use [meta-qt5] in subject to easy the processing
