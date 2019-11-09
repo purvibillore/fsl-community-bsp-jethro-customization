@@ -4,7 +4,7 @@ Author: purvi.billore@gmail.com
 
 Note: For customizing using the jethro branch of same repo for build......
 
-Repository for fsl-community-bsp-jethro-customization, for customized board.
+Repository for fsl-community-bsp-jethro-customization, for customized board based on sabresd.
 
 FSL Community BSP
 
