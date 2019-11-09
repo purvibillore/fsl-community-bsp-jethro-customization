@@ -4,10 +4,19 @@ meta-custom is the layer for customized board based on imx6qsabresd.
 Author: purvi.billore@gmail.com
 
 For customizing the image create the patch files of u-boot and kernel-configuration.
-source/meta-
+
+For u-boot add the patch file contents in the below files:
+fsl-community-bsp-jethro-customization/sources/meta-custom/recipes-bsp/u-boot/u-boot-fslc-custom/u-boot-custom-sd-card.patch
+fsl-community-bsp-jethro-customization/sources/meta-custom/recipes-bsp/u-boot/u-boot-fslc-custom/u-boot-custom-emmc.patch
+
+For kernel-configuration add the patch file contents in the below file:
+fsl-community-bsp-jethro-customization/sources/meta-custom/recipes-kernel/linux/linux-fslc-imx-custom/kernel-custom_2019_10.patch
 
 Then, first run the file:
 source setup-environment build
+
+If permission denied, then run the below command and again run the above command:
+chmod a+wrx -R path_of_the_folder/sources
 
 Then, compile and deploy the u-boot by the below commands:
 bitbake -c compile -f u-boot-fslc-custom   //compile u-boot
